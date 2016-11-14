@@ -106,6 +106,7 @@ class MessageFormatterTest extends \Lmd\Guzzle\Tests\GuzzleTestCase
         $this->assertNotEmpty($formatter->format($this->request, $this->response));
     }
 
+    /*
     public function testUsesResponseWhenNoHandleAndGettingCurlInformation()
     {
         $formatter = new MessageFormatter('{connect_time}/{total_time}');
@@ -121,6 +122,7 @@ class MessageFormatterTest extends \Lmd\Guzzle\Tests\GuzzleTestCase
             )));
         $this->assertEquals('1/2', $formatter->format($this->request, $response));
     }
+    */
 
     public function testUsesEmptyStringWhenNoHandleAndNoResponse()
     {

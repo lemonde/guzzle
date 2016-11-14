@@ -290,7 +290,7 @@ class BackoffPluginTest extends \Lmd\Guzzle\Tests\GuzzleTestCase implements Even
             'request'    => $request,
             'curl_multi' => $multi
         ));
-        $event->setName(CurlMultiInterface::POLLING_REQUEST);
+        //$event->setName(CurlMultiInterface::POLLING_REQUEST);
 
         return $event;
     }

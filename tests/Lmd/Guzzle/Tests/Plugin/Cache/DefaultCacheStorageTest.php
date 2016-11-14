@@ -50,14 +50,14 @@ class DefaultCacheStorageTest extends \Lmd\Guzzle\Tests\GuzzleTestCase
         $cache = $this->getCache();
         $foundRequest = $foundBody = $bodyKey = false;
         foreach ($this->readAttribute($cache['cache'], 'data') as $key => $v) {
-            if (strpos($v, 'foo.com')) {
+            if (strpos($v[0], 'foo.com')) {
                 $foundRequest = true;
-                $data = unserialize($v);
+                $data = unserialize($v[0]);
                 $bodyKey = $data[0][3];
                 $this->assertInternalType('integer', $data[0][4]);
                 $this->assertFalse(isset($data[0][0]['connection']));
                 $this->assertEquals('foo.com', $data[0][0]['host']);
-            } elseif ($v == 'test') {
+            } elseif ($v[0] == 'test') {
                 $foundBody = $key;
             }
         }
@@ -93,8 +93,8 @@ class DefaultCacheStorageTest extends \Lmd\Guzzle\Tests\GuzzleTestCase
         $cache['storage']->cache($cache['request'], $response);
         $data = $this->readAttribute($cache['cache'], 'data');
         foreach ($data as $v) {
-            if (strpos($v, 'foo.com')) {
-                $u = unserialize($v);
+            if (strpos($v[0], 'foo.com')) {
+                $u = unserialize($v[0]);
                 $this->assertEquals(2, count($u));
                 $this->assertEquals($u[0][0]['accept'], 'application/xml');
                 $this->assertEquals($u[0][1]['content-type'], 'application/xml');
@@ -117,7 +117,7 @@ class DefaultCacheStorageTest extends \Lmd\Guzzle\Tests\GuzzleTestCase
         $this->assertFalse(in_array('test', $this->readAttribute($cache['cache'], 'data')));
         $this->assertFalse(in_array($cache['serialized'], $this->readAttribute($cache['cache'], 'data')));
         $this->assertEquals(
-            array('DoctrineNamespaceCacheKey[]'),
+            array(),
             array_keys($this->readAttribute($cache['cache'], 'data'))
         );
     }
@@ -146,7 +146,12 @@ class DefaultCacheStorageTest extends \Lmd\Guzzle\Tests\GuzzleTestCase
     {
         $cache = $this->getCache();
         $data = $this->readAttribute($cache['cache'], 'data');
-        $key = array_search('test', $data);
+
+        foreach ($data as $key => $values) {
+            if ($values[0] === 'test') {
+                break;
+            }
+        }
         $cache['cache']->delete(substr($key, 1, -4));
         $this->assertNull($cache['storage']->fetch($cache['request']));
     }
@@ -174,8 +179,8 @@ class DefaultCacheStorageTest extends \Lmd\Guzzle\Tests\GuzzleTestCase
         $cache['storage']->cache($request, $response);
         $data = $this->readAttribute($cache['cache'], 'data');
         foreach ($data as $v) {
-            if (strpos($v, 'foo.com')) {
-                $u = unserialize($v);
+            if (strpos($v[0], 'foo.com')) {
+                $u = unserialize($v[0]);
                 $this->assertGreaterThan($u[1][4], $u[0][4]);
                 break;
             }
