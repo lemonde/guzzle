@@ -1,0 +1,11 @@
+{
+    "services": {
+        "foo": {
+            "class": "Lmd\\Guzzle\\Tests\\Service\\Mock\\MockClient",
+            "extends": "abstract",
+            "params": {
+                "baz": "bar"
+            }
+        }
+    }
+}
