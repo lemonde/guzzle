@@ -1,5 +1,5 @@
 {
-    "name": "guzzle/stream",
+    "name": "lmd/guzzle/stream",
     "description": "Guzzle stream wrapper component",
     "homepage": "http://guzzlephp.org/",
     "keywords": ["stream", "component", "guzzle"],
@@ -13,13 +13,13 @@
     ],
     "require": {
         "php": ">=5.3.2",
-        "guzzle/common": "self.version"
+        "lmd/guzzle/common": "self.version"
     },
     "suggest": {
-        "guzzle/http": "To convert Guzzle request objects to PHP streams"
+        "lmd/guzzle/http": "To convert Guzzle request objects to PHP streams"
     },
     "autoload": {
-        "psr-0": { "Guzzle\\Stream": "" }
+        "psr-0": { "Lmd\\Guzzle\\Stream": "" }
     },
     "target-dir": "Guzzle/Stream",
     "extra": {

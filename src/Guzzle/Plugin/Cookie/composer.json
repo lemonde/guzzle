@@ -1,5 +1,5 @@
 {
-    "name": "guzzle/plugin-cookie",
+    "name": "lmd/guzzle/plugin-cookie",
     "description": "Guzzle cookie plugin",
     "homepage": "http://guzzlephp.org/",
     "keywords": ["plugin", "guzzle"],
@@ -13,10 +13,10 @@
     ],
     "require": {
         "php": ">=5.3.2",
-        "guzzle/http": "self.version"
+        "lmd/guzzle/http": "self.version"
     },
     "autoload": {
-        "psr-0": { "Guzzle\\Plugin\\Cookie": "" }
+        "psr-0": { "Lmd\\Guzzle\\Plugin\\Cookie": "" }
     },
     "target-dir": "Guzzle/Plugin/Cookie",
     "extra": {

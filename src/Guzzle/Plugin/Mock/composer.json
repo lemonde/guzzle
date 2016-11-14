@@ -1,5 +1,5 @@
 {
-    "name": "guzzle/plugin-mock",
+    "name": "lmd/guzzle/plugin-mock",
     "description": "Guzzle Mock plugin",
     "homepage": "http://guzzlephp.org/",
     "keywords": ["mock", "plugin", "guzzle"],
@@ -13,10 +13,10 @@
     ],
     "require": {
         "php": ">=5.3.2",
-        "guzzle/http": "self.version"
+        "lmd/guzzle/http": "self.version"
     },
     "autoload": {
-        "psr-0": { "Guzzle\\Plugin\\Mock": "" }
+        "psr-0": { "Lmd\\Guzzle\\Plugin\\Mock": "" }
     },
     "target-dir": "Guzzle/Plugin/Mock",
     "extra": {

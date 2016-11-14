@@ -1,5 +1,5 @@
 {
-    "name": "guzzle/service",
+    "name": "lmd/guzzle/service",
     "description": "Guzzle service component for abstracting RESTful web services",
     "homepage": "http://guzzlephp.org/",
     "keywords": ["web service", "webservice", "REST", "guzzle"],
@@ -13,12 +13,12 @@
     ],
     "require": {
         "php": ">=5.3.2",
-        "guzzle/cache": "self.version",
-        "guzzle/http": "self.version",
-        "guzzle/inflection": "self.version"
+        "lmd/guzzle/cache": "self.version",
+        "lmd/guzzle/http": "self.version",
+        "lmd/guzzle/inflection": "self.version"
     },
     "autoload": {
-        "psr-0": { "Guzzle\\Service": "" }
+        "psr-0": { "Lmd\\Guzzle\\Service": "" }
     },
     "target-dir": "Guzzle/Service",
     "extra": {

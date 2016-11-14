@@ -1,5 +1,5 @@
 {
-    "name": "guzzle/batch",
+    "name": "lmd/guzzle/batch",
     "description": "Guzzle batch component for batching requests, commands, or custom transfers",
     "homepage": "http://guzzlephp.org/",
     "keywords": ["batch", "HTTP", "REST", "guzzle"],
@@ -13,14 +13,14 @@
     ],
     "require": {
         "php": ">=5.3.2",
-        "guzzle/common": "self.version"
+        "lmd/guzzle/common": "self.version"
     },
     "autoload": {
-        "psr-0": { "Guzzle\\Batch": "" }
+        "psr-0": { "Lmd\\Guzzle\\Batch": "" }
     },
     "suggest": {
-        "guzzle/http": "self.version",
-        "guzzle/service": "self.version"
+        "lmd/guzzle/http": "self.version",
+        "lmd/guzzle/service": "self.version"
     },
     "target-dir": "Guzzle/Batch",
     "extra": {

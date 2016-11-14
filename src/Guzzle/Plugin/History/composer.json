@@ -1,5 +1,5 @@
 {
-    "name": "guzzle/plugin-history",
+    "name": "lmd/guzzle/plugin-history",
     "description": "Guzzle history plugin",
     "homepage": "http://guzzlephp.org/",
     "keywords": ["plugin", "guzzle"],
@@ -13,10 +13,10 @@
     ],
     "require": {
         "php": ">=5.3.2",
-        "guzzle/http": "self.version"
+        "lmd/guzzle/http": "self.version"
     },
     "autoload": {
-        "psr-0": { "Guzzle\\Plugin\\History": "" }
+        "psr-0": { "Lmd\\Guzzle\\Plugin\\History": "" }
     },
     "target-dir": "Guzzle/Plugin/History",
     "extra": {

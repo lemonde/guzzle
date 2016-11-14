@@ -1,5 +1,5 @@
 {
-    "name": "guzzle/guzzle",
+    "name": "lmd/guzzle",
     "type": "library",
     "description": "Guzzle is a PHP HTTP client library and framework for building RESTful web service clients",
     "keywords": ["framework", "http", "rest", "web service", "curl", "client", "HTTP client"],
@@ -19,28 +19,28 @@
     ],
 
     "replace": {
-        "guzzle/batch": "self.version",
-        "guzzle/cache": "self.version",
-        "guzzle/common": "self.version",
-        "guzzle/http": "self.version",
-        "guzzle/inflection": "self.version",
-        "guzzle/iterator": "self.version",
-        "guzzle/log": "self.version",
-        "guzzle/parser": "self.version",
-        "guzzle/plugin": "self.version",
-        "guzzle/plugin-async": "self.version",
-        "guzzle/plugin-backoff": "self.version",
-        "guzzle/plugin-cache": "self.version",
-        "guzzle/plugin-cookie": "self.version",
-        "guzzle/plugin-curlauth": "self.version",
-        "guzzle/plugin-error-response": "self.version",
-        "guzzle/plugin-history": "self.version",
-        "guzzle/plugin-log": "self.version",
-        "guzzle/plugin-md5": "self.version",
-        "guzzle/plugin-mock": "self.version",
-        "guzzle/plugin-oauth": "self.version",
-        "guzzle/service": "self.version",
-        "guzzle/stream": "self.version"
+        "lmd/guzzle/batch": "self.version",
+        "lmd/guzzle/cache": "self.version",
+        "lmd/guzzle/common": "self.version",
+        "lmd/guzzle/http": "self.version",
+        "lmd/guzzle/inflection": "self.version",
+        "lmd/guzzle/iterator": "self.version",
+        "lmd/guzzle/log": "self.version",
+        "lmd/guzzle/parser": "self.version",
+        "lmd/guzzle/plugin": "self.version",
+        "lmd/guzzle/plugin-async": "self.version",
+        "lmd/guzzle/plugin-backoff": "self.version",
+        "lmd/guzzle/plugin-cache": "self.version",
+        "lmd/guzzle/plugin-cookie": "self.version",
+        "lmd/guzzle/plugin-curlauth": "self.version",
+        "lmd/guzzle/plugin-error-response": "self.version",
+        "lmd/guzzle/plugin-history": "self.version",
+        "lmd/guzzle/plugin-log": "self.version",
+        "lmd/guzzle/plugin-md5": "self.version",
+        "lmd/guzzle/plugin-mock": "self.version",
+        "lmd/guzzle/plugin-oauth": "self.version",
+        "lmd/guzzle/service": "self.version",
+        "lmd/guzzle/stream": "self.version"
     },
 
     "require": {
@@ -51,8 +51,13 @@
 
     "autoload": {
         "psr-0": {
-            "Guzzle": "src/",
-            "Guzzle\\Tests": "tests/"
+            "Lmd\\Guzzle": "src/"
+        }
+    },
+
+    "autoload-dev": {
+        "psr-0": {
+            "Lmd\\Guzzle\\Tests": "tests/"
         }
     },
 

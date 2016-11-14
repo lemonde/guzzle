@@ -1,5 +1,5 @@
 {
-    "name": "guzzle/common",
+    "name": "lmd/guzzle/common",
     "homepage": "http://guzzlephp.org/",
     "description": "Common libraries used by Guzzle",
     "keywords": ["common", "event", "exception", "collection"],
@@ -9,7 +9,7 @@
         "symfony/event-dispatcher": ">=2.1"
     },
     "autoload": {
-        "psr-0": { "Guzzle\\Common": "" }
+        "psr-0": { "Lmd\\Guzzle\\Common": "" }
     },
     "target-dir": "Guzzle/Common",
     "extra": {

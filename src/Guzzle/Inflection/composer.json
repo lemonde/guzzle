@@ -1,5 +1,5 @@
 {
-    "name": "guzzle/inflection",
+    "name": "lmd/guzzle/inflection",
     "description": "Guzzle inflection component",
     "homepage": "http://guzzlephp.org/",
     "keywords": ["inflection", "guzzle"],
@@ -15,7 +15,7 @@
         "php": ">=5.3.2"
     },
     "autoload": {
-        "psr-0": { "Guzzle\\Inflection": "" }
+        "psr-0": { "Lmd\\Guzzle\\Inflection": "" }
     },
     "target-dir": "Guzzle/Inflection",
     "extra": {

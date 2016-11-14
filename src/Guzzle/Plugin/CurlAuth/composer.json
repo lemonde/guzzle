@@ -1,5 +1,5 @@
 {
-    "name": "guzzle/plugin-curlauth",
+    "name": "lmd/guzzle/plugin-curlauth",
     "description": "Guzzle cURL authorization plugin",
     "homepage": "http://guzzlephp.org/",
     "keywords": ["plugin", "curl", "guzzle"],
@@ -13,10 +13,10 @@
     ],
     "require": {
         "php": ">=5.3.2",
-        "guzzle/http": "self.version"
+        "lmd/guzzle/http": "self.version"
     },
     "autoload": {
-        "psr-0": { "Guzzle\\Plugin\\CurlAuth": "" }
+        "psr-0": { "Lmd\\Guzzle\\Plugin\\CurlAuth": "" }
     },
     "target-dir": "Guzzle/Plugin/CurlAuth",
     "extra": {

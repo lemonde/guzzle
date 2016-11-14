@@ -1,5 +1,5 @@
 {
-    "name": "guzzle/plugin-log",
+    "name": "lmd/guzzle/plugin-log",
     "description": "Guzzle log plugin for over the wire logging",
     "homepage": "http://guzzlephp.org/",
     "keywords": ["plugin", "log", "guzzle"],
@@ -13,11 +13,11 @@
     ],
     "require": {
         "php": ">=5.3.2",
-        "guzzle/http": "self.version",
-        "guzzle/log": "self.version"
+        "lmd/guzzle/http": "self.version",
+        "lmd/guzzle/log": "self.version"
     },
     "autoload": {
-        "psr-0": { "Guzzle\\Plugin\\Log": "" }
+        "psr-0": { "Lmd\\Guzzle\\Plugin\\Log": "" }
     },
     "target-dir": "Guzzle/Plugin/Log",
     "extra": {

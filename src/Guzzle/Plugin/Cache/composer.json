@@ -1,5 +1,5 @@
 {
-    "name": "guzzle/plugin-cache",
+    "name": "lmd/guzzle/plugin-cache",
     "description": "Guzzle HTTP cache plugin",
     "homepage": "http://guzzlephp.org/",
     "keywords": ["plugin", "guzzle"],
@@ -13,11 +13,11 @@
     ],
     "require": {
         "php": ">=5.3.2",
-        "guzzle/http": "self.version",
-        "guzzle/cache": "self.version"
+        "lmd/guzzle/http": "self.version",
+        "lmd/guzzle/cache": "self.version"
     },
     "autoload": {
-        "psr-0": { "Guzzle\\Plugin\\Cache": "" }
+        "psr-0": { "Lmd\\Guzzle\\Plugin\\Cache": "" }
     },
     "target-dir": "Guzzle/Plugin/Cache",
     "extra": {

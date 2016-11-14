@@ -1,5 +1,5 @@
 {
-    "name": "guzzle/plugin-error-response",
+    "name": "lmd/guzzle/plugin-error-response",
     "description": "Guzzle errorResponse plugin for creating error exceptions based on a service description",
     "homepage": "http://guzzlephp.org/",
     "keywords": ["plugin", "guzzle"],
@@ -13,10 +13,10 @@
     ],
     "require": {
         "php": ">=5.3.2",
-        "guzzle/service": "self.version"
+        "lmd/guzzle/service": "self.version"
     },
     "autoload": {
-        "psr-0": { "Guzzle\\Plugin\\ErrorResponse": "" }
+        "psr-0": { "Lmd\\Guzzle\\Plugin\\ErrorResponse": "" }
     },
     "target-dir": "Guzzle/Plugin/ErrorResponse",
     "extra": {

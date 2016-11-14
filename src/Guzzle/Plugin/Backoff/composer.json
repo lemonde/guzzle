@@ -1,5 +1,5 @@
 {
-    "name": "guzzle/plugin-backoff",
+    "name": "lmd/guzzle/plugin-backoff",
     "description": "Guzzle backoff retry plugins",
     "homepage": "http://guzzlephp.org/",
     "keywords": ["plugin", "guzzle"],
@@ -13,11 +13,11 @@
     ],
     "require": {
         "php": ">=5.3.2",
-        "guzzle/http": "self.version",
-        "guzzle/log": "self.version"
+        "lmd/guzzle/http": "self.version",
+        "lmd/guzzle/log": "self.version"
     },
     "autoload": {
-        "psr-0": { "Guzzle\\Plugin\\Backoff": "" }
+        "psr-0": { "Lmd\\Guzzle\\Plugin\\Backoff": "" }
     },
     "target-dir": "Guzzle/Plugin/Backoff",
     "extra": {

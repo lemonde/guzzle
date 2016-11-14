@@ -1,5 +1,5 @@
 {
-    "name": "guzzle/cache",
+    "name": "lmd/guzzle/cache",
     "description": "Guzzle cache adapter component",
     "homepage": "http://guzzlephp.org/",
     "keywords": ["cache", "adapter", "zf", "doctrine", "guzzle"],
@@ -13,10 +13,10 @@
     ],
     "require": {
         "php": ">=5.3.2",
-        "guzzle/common": "self.version"
+        "lmd/guzzle/common": "self.version"
     },
     "autoload": {
-        "psr-0": { "Guzzle\\Cache": "" }
+        "psr-0": { "Lmd\\Guzzle\\Cache": "" }
     },
     "target-dir": "Guzzle/Cache",
     "extra": {
